@@ -1,0 +1,3 @@
+/cszcms/cache/
+/cszcms/logs/
+/DontTouchThisInProd.config.inc.production.php

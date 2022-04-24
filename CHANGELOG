@@ -1,0 +1,108 @@
+#### RELEASE NOTES
+CSZ-CMS V.1.2.9 (2020-05-31)
+- Add form builder function for add new data submit or edit data submit. 
+- Add general label for 404 page not found and site maintenance.
+- Add inline editor for page content on view mode.
+- Fixed cookie info notify not show on frontend.
+- Fixed frontend page content not found with space whitespaces or %20.
+- Fixed more security bug.
+- Fixed more important bug.
+- Improve performance.
+
+CSZ-CMS V.1.2.8 (2020-04-30)
+- Add data duplicated checking on field to you choose (Form Builder).
+- Fixed Form Builder for change form name but db table not rename.
+- Fixed Form Builder file upload problem for frontend.
+- Fixed Private Message bug.
+- Fixed more security bug.
+- Fixed more important bug.
+- Improve performance.
+
+CSZ-CMS V.1.2.7 (2020-03-29)
+- Add file upload for download on Article plugin.
+- Fixed backend menu permission for plugin.
+- Fixed upload function on TinyMCE (images, media, link).
+- Fixed more important bug.
+
+CSZ-CMS V.1.2.6 (2020-02-29)
+- Add support the other database. You can config in config.inc.php file. See example on config_example.inc.php.
+- Update elFinder to 2.1.53.
+- Fixed timepicker bug (change to jquery datetimepicker) on form builder.
+- Fixed AdminLTE dropdown menu color.
+- Fixed more important bug.
+
+CSZ-CMS V.1.2.5 (2019-12-29)
+- Add cookie info notify on Site Setting.
+- Add upload function on TinyMCE (images, media, link).
+- Update elFinder to 2.1.51.
+- Update TinyMCE to 4.9.6.
+- Update AdminLTE to 2.4.18.
+- Fixed file manager upload vulnerability (Github Issue#21).
+- Fixed Time-based blind SQL injection Vulnerability (Github Issue#22).
+- Fixed a boolean-based blind SQL injection Vulnerability (Github Issue#23).
+
+CSZ-CMS V.1.2.4 (2019-10-27)
+- Add setting on content page for member login can see (Choose User Group).
+- Add setting on Article and Gallery plugin for member login can see (Choose User Group).
+- Add div class on form builder.
+- Add Vietnamese language on backend.
+- Add Line notify libraries.
+- Add copy_as on user groups.
+- Fixed file manager upload vulnerability (Github Issue#20).
+- Fixed more important bug.
+- Improve performance.
+
+CSZ-CMS V.1.2.3 (2019-08-19)
+- Add French language on backend.
+- Update Bootstrap to 3.4.1.
+- Fixed Time-based blind SQL injection Vulnerability (Github Issue#19).
+- Fixed Private Message (PM) error.
+- Fixed Article plugin pagination bug.
+- Fixed not htaccess support bug.
+- Fixed more important bug.
+- Improve performance.
+
+CSZ-CMS V.1.2.2 (2019-06-12)
+- Update elFinder to 2.1.49.
+- Update gallery plugin to 1.0.6.
+- Update Codeigniter core to 3.1.10.
+- Fixed to disable the automatic upgrade when use beta version.
+- Fixed XML Widget url field have blank space.
+- Fixed MX_Router and support for PHP 7.3.
+- Fixed Facebook chat not working.
+- Fixed remote url response code checking.
+- Fixed CSV import on backend not working.
+- Fixed more important bug.
+- Fixed Cannot modify header information error.
+- Fixed the session namespace.
+- Improve performance.
+
+CSZ-CMS V.1.2.1 (2018-08-29)
+- Add CI system core update with click.
+- Add google translator tools. [$this->Headfoot_html->langMenu(4, 'th');].
+- Add the settings for website name on title page (disable, first, last).
+- Add Carousel can add custom template.
+- Fixed version checking for support CI core update.
+- Fixed blank page when check 'Disable HTML Optimization' on Site Settings.
+- Fixed rss feed on backend.
+- Fixed xml widget and plugin widget not working.
+- Fixed install wizard bug.
+
+CSZ-CMS V.1.2.0 (2018-06-15)
+- Add Developer Toolbar.
+- Add new plugin widget system.
+- Add the article and gallery plugin can upgrade with plugin manager.
+- Add setting on 'Site Settings' for disabled the email logs to save into DB.
+- Add setting on 'Forms Builder' for disabled the save into DB after form submit.
+- Update Codeigniter core to 3.1.8.
+- Update TinyMCE to 4.7.13.
+- Update AdminLTE to 2.4.3.
+- Update elFinder to 2.1.38.
+- Support for PHP 7.2.
+- Allow blank password for DB password on installer wizard.
+- Fixed plugin upgrade loop never die.
+- Fixed widget code not working.
+- Fixed the session and cookie prefix name.
+- Fixed .htaccess config bug with static assets.
+- Fixed corecss and corejs error on PHP7.2.
+- Fixed more bug.

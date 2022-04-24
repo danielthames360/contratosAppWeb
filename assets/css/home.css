@@ -1,0 +1,68 @@
+.floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #1abc9c;
+    /* flexbox centraliza o icone */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* position */
+    position: fixed; 
+    bottom: 15px; 
+    right: 15px; 
+    /* transition usado no efeito do hover */
+    transition: .2s; 
+    z-index: 100;
+  }
+  .floating-button svg {
+    /* deixa o icone em cima do texto */
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 10;
+    fill: #fff;
+  }
+  
+  .floating-button:hover {
+    /* faz o efeito do hover do botão */
+    transform: translateY(-4px); 
+    /* remove o sublinhado */
+    text-decoration: none; 
+  }
+  
+  .floating-button .text-send {
+    /* tamanho e altura do texto */
+    height: 30px;
+    width: 10px;
+    /* esconde texto */
+    visibility: hidden;
+    opacity: 0;
+    /* position */
+    position: absolute;
+    right: 30px;
+    /* flexbox centraliza o texto */
+    display: flex;
+    align-items: center;
+    /* estilo */
+    font-size: 13px;
+    padding-left: 15px;
+    border-radius: 15px;
+    background: #1abc9c;
+    color: #fff;
+    /* transition usado no efeito do hover */
+    transition: .2s;
+    /* nao deixa o texto passar em cima do icone no menu */
+    overflow: hidden;
+    /* nao quebra o texto */
+    white-space: nowrap;
+  }
+  
+  .floating-button:hover .text-send{
+    /* mostra o texto */
+    visibility: visible;
+    opacity: 1;
+    /* aumenta o tamanho do container do texto */
+    width: 150px;
+  }
+  
