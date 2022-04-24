@@ -2652,10 +2652,10 @@ class Csz_admin_model extends CI_Model{
     /**
      * Export the database to csv
      *
-     * @param   srting $filename  Filename
-     * @param   srting $table  Database Table to export
+     * @param   string $filename  Filename
+     * @param   string $table  Database Table to export
      * @param   array $field_sel  Database field to select to export
-     * @param   srting $where  Where condition
+     * @param   string $where  Where condition
      * @param   string	$orderby   Order by field or NULL 
      * @param   string	$sort   asc or desc or NULL
      * @param	string	$groupby   Group by field or NULL 
@@ -2713,7 +2713,7 @@ class Csz_admin_model extends CI_Model{
     /**
      * Find the primary key from db table
      *
-     * @param srting $table  Database Table
+     * @param string $table  Database Table
      * @return string|array
      */
     public function findPrimaryKey($table) {

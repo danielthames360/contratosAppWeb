@@ -52,7 +52,7 @@ function obtenerContratosRespuesta(respuesta) {
 }
 
 function reimprimirContrato(id) {
-  const url =  window.location.href.includes('local') ? `/contratoslegal/contrato/reimprimirContrato/${id}` :`contrato/reimprimirContrato/${id}`;
+  const url =  window.location.href.includes('local') ? `/contratoslegal/contrato/reimprimirContrato/${id}` :`/contrato/reimprimirContrato/${id}`;
   //Create an hidden form
   var form = $("<form>", {
     method: "get",

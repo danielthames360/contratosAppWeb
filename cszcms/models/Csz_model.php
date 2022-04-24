@@ -3343,7 +3343,7 @@ class Csz_model extends CI_Model
      * I'm not sure that it won't negatively affect certain files in unexpected ways,
      * but so far I haven't found that it causes trouble.
      *
-     * @param srting $file From $_FILE['fieldname']['tmp_name']
+     * @param string $file From $_FILE['fieldname']['tmp_name']
      * @return	string or FALSE
      */
     public function photo_xss_clean($file)
