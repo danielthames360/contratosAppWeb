@@ -158,7 +158,7 @@ class Contrato extends CI_Controller
                     #header { position: fixed; left: 0px; top: -130px; right: 0px; height: 130px; }
                   </style>
                   <div id='header'>
-                    <img src='assets/images/cabeserA.jpg' width='100%' height='100%'/>
+                    <img src='https://contratoslegal.com/assets/images/cabeserA.jpg' width='100%' height='auto'/>
                   </div>";
         if ($contrato == 1) {
             $html .= "<br>
@@ -184,6 +184,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p>
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -195,7 +196,7 @@ class Contrato extends CI_Controller
                             </tr>
                             
                     </table>
-                    </p>";
+                    ";
         } elseif ($contrato == 2) {
             $html .= "<br>
                     <h3>CONTRATO DE ARRENDAMIENTO DE INMUEBLE (CASA DEPARTAMENTO O LOTE DE TERRENO) </h3>
@@ -226,6 +227,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p>       
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -237,7 +239,7 @@ class Contrato extends CI_Controller
                             </tr>
                             
                     </table>
-                     </p>                                                                                   
+                                                                                                 
                     ";
         } elseif ($contrato == 3) {
             $html .= " <br> <h3>CONTRATO DE PRESTACION DE SERVICIOS TEMPORALES</h3>
@@ -262,6 +264,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                         <br><br>
+                        </p>
                         <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -272,7 +275,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                        </p>
+                        
                         ";
         } elseif ($contrato == 4) {
             $html .= " <br> <h3>CONTRATO DE TRABAJADORA DEL HOGAR</h3>
@@ -300,6 +303,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                         <br><br>
+                         </p>    
                         <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -310,7 +314,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                         </p>                                                                         
+                                                                                             
                         ";
         } elseif ($contrato == 5) {
             $html .= "<br><h3>CONTRATO DE ARRENDAMIENTO DE OBJETO O BIEN NO SUJETO A REGISTRO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
@@ -342,6 +346,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p>
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -352,7 +357,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>INQUILINO- ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>   
+                      
                     ";
         } elseif ($contrato == 6) {
             $html .= "<br><h3>CONTRATO DE COMPRAVENTA DE VEHICULO</h3> 
@@ -379,6 +384,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p>
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -389,7 +395,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                             </tr>     
                     </table>
-                    </p>
+                    
                     ";
         } elseif ($contrato == 7) {
             $html .= "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
@@ -416,6 +422,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p> 
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -426,7 +433,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>VENDEDOR</td>
                             </tr>     
                     </table>
-                    </p>              
+                                 
                     ";
         } elseif ($contrato == 8) {
             $html .= "<br><h3>CONTRATO DE ALQUILER DE VEHICULO</h3>
@@ -455,6 +462,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p> 
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -465,10 +473,10 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>        
+                           
                     ";
         } elseif ($contrato == 9) {
-            $html = "<br><h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>
+            $html .= "<br><h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>
                     
                     <p align='justify'>
                     Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de prestación de servicios de construcción de obra (coloque de manera general que se construirá, ej. Una casa de dos plantas, una piscina), al tenor de las siguientes cláusulas:
@@ -496,6 +504,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                      <br><br>
+                     </p>
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -506,10 +515,10 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONSTRUCTOR-CONTRATADO</td>
                             </tr>     
                     </table>
-                    </p>
+                    
                     ";
         } elseif ($contrato == 10) {
-            $html = "<br><h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
+            $html .= "<br><h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de ANTICRESIS, con la finalidad de ser elevado a público, al tenor de las siguientes clausulas:
@@ -538,6 +547,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
              <br><br>
+              </p>  
             <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -548,10 +558,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>ACREEDOR ANTICRESISTA</td>
                     </tr>     
             </table>
-            </p>                          
+                                   
             ";
         } elseif ($contrato == 11) {
-            $html = "<br><h3>CONTRATO DE PRESTAMO DE DINERO</h3>
+            $html .= "<br><h3>CONTRATO DE PRESTAMO DE DINERO</h3>
                 
                 <p align='justify'>
                 Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de préstamo de dinero, al tenor de las siguientes clausulas:
@@ -577,6 +587,7 @@ class Contrato extends CI_Controller
                 <br>
                 <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                 <br><br>
+                </p>
                 <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -587,10 +598,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                     </tr>     
                 </table>
-                </p>
+                
                 ";
         } elseif ($contrato == 12) {
-            $html = "<br><h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
+            $html .= "<br><h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de Reconocimiento de Deuda por Obligaciones Personales y Compromiso de Pago con Garantía Solidaria y Mancomunada, al tenor de las siguientes clausulas:
@@ -612,6 +623,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+            </p>
             <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -631,10 +643,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>GARANTE SOLIDARIO Y MANCOMUNADO</td>
                     </tr>
                 </table>
-            </p>
+            
             ";
         } elseif ($contrato == 13) {
-            $html = "<br><h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
+            $html .= "<br><h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de transferencia de inmueble, al tenor de las siguientes clausulas:
@@ -671,6 +683,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                 <tr>
                     <td> Fdo. (nombre completo del vendedor/a) </td>
@@ -681,10 +694,10 @@ class Contrato extends CI_Controller
                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                 </tr>
             </table>
-            </p>
+           
             ";
         } elseif ($contrato == 14) {
-            $html = "<br><h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
+            $html .= "<br><h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
              
              <p align='justify'>
             Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de fabricacion de (coloque el producto que fabricara ej. Tubos de PVC, Galletas etc), al tenor de las siguientes cláusulas:
@@ -705,6 +718,7 @@ class Contrato extends CI_Controller
             <strong>SEPTIMA (ACEPTACIÓN).-</strong> En conformidad a la totalidad de las cláusulas del presente contrato, ambas partes firman este documento, sin que medie ningún tipo de vicio del consentimiento en cuatro ejemplares del mismo tenor, en la ciudad de 
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+            </p>
             <table style='width:100%;'>
                 <tr>
                         <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -715,10 +729,10 @@ class Contrato extends CI_Controller
                         <td style='text-align: center; font-weight: bold;'>CONTRATADO o FABRICANTE</td>
                 </tr>     
             </table>
-            </p>
+            
         ";
         } elseif ($contrato == 15) {
-            $html = "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO A CREDITO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
+            $html .= "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO A CREDITO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
                   
              <p align='justify'>   
             Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de VENTA de (coloque el objeto que desea vender, ej. Una televisión, equipo de música, celular, muebles, ropa etc.) A CREDITO, al tenor de las siguientes cláusulas:
@@ -753,6 +767,7 @@ class Contrato extends CI_Controller
             <strong>OCTAVA(ACEPTACION).-</strong> declaramos nuestra plena conformidad con todas las cláusulas suscritas en la presente minuta para su fiel y estricto cumplimiento y firmamos como muestra de conformidad sin que medie ningún tipo de vicio de consentimiento.
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                 <tr>
                         <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -763,7 +778,7 @@ class Contrato extends CI_Controller
                         <td style='text-align: center; font-weight: bold;'>VENDEDOR/ACREEDOR</td>
                 </tr>     
             </table>
-            </p>
+           
         ";
         }
 
@@ -794,7 +809,7 @@ class Contrato extends CI_Controller
                   </style>
                 
                   <div id='header'>
-                    <img src='https://contratoslegal.com/assets/images/cabeserA.jpg' width='100%' height='100%'/>
+                    <img src='https://contratoslegal.com/assets/images/cabeserA.jpg' width='100%' height='auto'/>
                   </div>";
         if ($contrato == 1) {
             $html .= "<br>
@@ -820,6 +835,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p>
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -831,7 +847,7 @@ class Contrato extends CI_Controller
                             </tr>
                             
                     </table>
-                    </p>";
+                    ";
         } elseif ($contrato == 2) {
             $html .= "<br>
                     <h3>CONTRATO DE ARRENDAMIENTO DE INMUEBLE (CASA DEPARTAMENTO O LOTE DE TERRENO) </h3>
@@ -862,6 +878,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p> 
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -873,7 +890,7 @@ class Contrato extends CI_Controller
                             </tr>
                             
                     </table>
-                     </p>                                                                                   
+                                                                                                      
                     ";
         } elseif ($contrato == 3) {
             $html .= " <br> <h3>CONTRATO DE PRESTACION DE SERVICIOS TEMPORALES</h3>
@@ -898,6 +915,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                         <br><br>
+                         </p>
                         <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -908,7 +926,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                        </p>
+                       
                         ";
         } elseif ($contrato == 4) {
             $html .= " <br> <h3>CONTRATO DE TRABAJADORA DEL HOGAR</h3>
@@ -936,6 +954,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                         <br><br>
+                         </p>      
                         <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -946,7 +965,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                         </p>                                                                         
+                                                                                           
                         ";
         } elseif ($contrato == 5) {
             $html .= "<br><h3>CONTRATO DE ARRENDAMIENTO DE OBJETO O BIEN NO SUJETO A REGISTRO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
@@ -978,6 +997,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p>   
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -988,7 +1008,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>INQUILINO- ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>   
+                   
                     ";
         } elseif ($contrato == 6) {
             $html .= "<br><h3>CONTRATO DE COMPRAVENTA DE VEHICULO</h3> 
@@ -1015,6 +1035,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p>
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1025,7 +1046,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                             </tr>     
                     </table>
-                    </p>
+                   
                     ";
         } elseif ($contrato == 7) {
             $html .= "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
@@ -1052,6 +1073,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p>   
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1062,7 +1084,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>VENDEDOR</td>
                             </tr>     
                     </table>
-                    </p>              
+                               
                     ";
         } elseif ($contrato == 8) {
             $html .= "<br><h3>CONTRATO DE ALQUILER DE VEHICULO</h3>
@@ -1091,6 +1113,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                    </p> 
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1101,10 +1124,10 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>        
+                           
                     ";
         } elseif ($contrato == 9) {
-            $html = "<br><h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>
+            $html .= "<br><h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>
                     
                     <p align='justify'>
                     Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de prestación de servicios de construcción de obra (coloque de manera general que se construirá, ej. Una casa de dos plantas, una piscina), al tenor de las siguientes cláusulas:
@@ -1132,6 +1155,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                      <br><br>
+                     </p>
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1142,10 +1166,10 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONSTRUCTOR-CONTRATADO</td>
                             </tr>     
                     </table>
-                    </p>
+                    
                     ";
         } elseif ($contrato == 10) {
-            $html = "<br><h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
+            $html .= "<br><h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de ANTICRESIS, con la finalidad de ser elevado a público, al tenor de las siguientes clausulas:
@@ -1174,6 +1198,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
              <br><br>
+             </p>   
             <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1184,10 +1209,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>ACREEDOR ANTICRESISTA</td>
                     </tr>     
             </table>
-            </p>                          
+                                   
             ";
         } elseif ($contrato == 11) {
-            $html = "<br><h3>CONTRATO DE PRESTAMO DE DINERO</h3>
+            $html .= "<br><h3>CONTRATO DE PRESTAMO DE DINERO</h3>
                 
                 <p align='justify'>
                 Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de préstamo de dinero, al tenor de las siguientes clausulas:
@@ -1213,6 +1238,7 @@ class Contrato extends CI_Controller
                 <br>
                 <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                 <br><br>
+                 </p>
                 <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1223,10 +1249,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                     </tr>     
                 </table>
-                </p>
+               
                 ";
         } elseif ($contrato == 12) {
-            $html = "<br><h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
+            $html .= "<br><h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de Reconocimiento de Deuda por Obligaciones Personales y Compromiso de Pago con Garantía Solidaria y Mancomunada, al tenor de las siguientes clausulas:
@@ -1248,6 +1274,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1267,10 +1294,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>GARANTE SOLIDARIO Y MANCOMUNADO</td>
                     </tr>
                 </table>
-            </p>
+           
             ";
         } elseif ($contrato == 13) {
-            $html = "<br><h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
+            $html .= "<br><h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
             
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de transferencia de inmueble, al tenor de las siguientes clausulas:
@@ -1307,6 +1334,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+              </p>
             <table style='width:100%;'>
                 <tr>
                     <td> Fdo. (nombre completo del vendedor/a) </td>
@@ -1317,10 +1345,10 @@ class Contrato extends CI_Controller
                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                 </tr>
             </table>
-            </p>
+          
             ";
         } elseif ($contrato == 14) {
-            $html = "<br><h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
+            $html .= "<br><h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
              
              <p align='justify'>
             Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de fabricacion de (coloque el producto que fabricara ej. Tubos de PVC, Galletas etc), al tenor de las siguientes cláusulas:
@@ -1341,6 +1369,7 @@ class Contrato extends CI_Controller
             <strong>SEPTIMA (ACEPTACIÓN).-</strong> En conformidad a la totalidad de las cláusulas del presente contrato, ambas partes firman este documento, sin que medie ningún tipo de vicio del consentimiento en cuatro ejemplares del mismo tenor, en la ciudad de 
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                 <tr>
                         <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1351,10 +1380,10 @@ class Contrato extends CI_Controller
                         <td style='text-align: center; font-weight: bold;'>CONTRATADO o FABRICANTE</td>
                 </tr>     
             </table>
-            </p>
+           
         ";
         } elseif ($contrato == 15) {
-            $html = "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO A CREDITO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
+            $html .= "<br><h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO A CREDITO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>
                   
              <p align='justify'>   
             Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de VENTA de (coloque el objeto que desea vender, ej. Una televisión, equipo de música, celular, muebles, ropa etc.) A CREDITO, al tenor de las siguientes cláusulas:
@@ -1389,6 +1418,7 @@ class Contrato extends CI_Controller
             <strong>OCTAVA(ACEPTACION).-</strong> declaramos nuestra plena conformidad con todas las cláusulas suscritas en la presente minuta para su fiel y estricto cumplimiento y firmamos como muestra de conformidad sin que medie ningún tipo de vicio de consentimiento.
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                 <tr>
                         <td style='text-align: center '> Fdo. (nombre completo) </td>
@@ -1399,7 +1429,7 @@ class Contrato extends CI_Controller
                         <td style='text-align: center; font-weight: bold;'>VENDEDOR/ACREEDOR</td>
                 </tr>     
             </table>
-            </p>
+           
         ";
         }
 
@@ -1560,7 +1590,7 @@ class Contrato extends CI_Controller
                     #header { position: fixed; left: 0px; top: -130px; right: 0px; height: 130px; }
                   </style>
                   <div id='header'>
-                    <img src='https://contratoslegal.com/assets/images/cabeserA.jpg' width='100%' height='100%'/>
+                    <img src='https://contratoslegal.com/assets/images/cabeserA.jpg' width='100%' height='auto'/>
                   </div>";
         if ($contrato == 1) {
             $html .= "<h3>CONTRATO DE TRASFERENCIA DE INMUEBLE (CASA DEPARTAMENTO O LOTE DE TERRENO)<h3><p align='justify'>Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de transferencia de inmueble, al tenor de las siguientes clausulas:
@@ -1583,6 +1613,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br>
+                    </p>
                     <table style='width:100%;'>
                         <tr>
                                 <td style='text-align: center '> " . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . " </td>
@@ -1593,7 +1624,7 @@ class Contrato extends CI_Controller
                                 <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                         </tr>     
                     </table>
-                     </p>";
+                     ";
             //                    echo '<pre>'.print_r( $html, true).'</pre>';
             //                    die();
         } elseif ($contrato == 2) {
@@ -1627,6 +1658,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>                   
                      <br>
+                      </p>   
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1638,7 +1670,7 @@ class Contrato extends CI_Controller
                             </tr>
                             
                     </table>
-                     </p>                                                                                
+                                                                                                 
                     ";
         } elseif ($contrato == 3) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato3_fechainicioservicio']);
@@ -1664,6 +1696,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                      <br><br>
+                      </p>
                         <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1674,7 +1707,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                        </p>
+                       
                         ";
         } elseif ($contrato == 4) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato4_fechainicioservicio']);
@@ -1705,6 +1738,7 @@ class Contrato extends CI_Controller
                         <br>
                         <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p>  
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . " </td>
@@ -1715,7 +1749,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONTRATADO</td>
                             </tr>     
                         </table>
-                         </p>      
+                            
                         ";
         } elseif ($contrato == 5) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato5_fechainicioalquilerobjeto']);
@@ -1749,6 +1783,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br> 
+                    </p>  
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1759,7 +1794,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>INQUILINO- ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>  
+                    
                     ";
         } elseif ($contrato == 6) {
             $html .= "<h3>CONTRATO DE COMPRAVENTA DE VEHICULO</h3>  
@@ -1785,6 +1820,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                     </p>
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1795,7 +1831,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                             </tr>     
                     </table>
-                    </p>
+                   
                     ";
         } elseif ($contrato == 7) {
             $html .= "<h3>CONTRATO DE VENTA DE OBJETO O BIEN NO SUJETO A REGISTRO (CUALQUIER OBJETO QUE NO CUENTA CON REGISTRO, MOBILIARIA, TV, MUEBLES, ROPA, OBJETOS TECNOLOGICOS ETC.)</h3>   
@@ -1820,6 +1856,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                      <br><br>
+                      </p>   
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1830,7 +1867,7 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>VENDEDOR</td>
                             </tr>     
                     </table>
-                    </p>    
+                    
                     ";
         } elseif ($contrato == 8) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato8_fechainicioalquiler']);
@@ -1861,6 +1898,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>                    
                      <br><br>
+                       </p>   
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1871,14 +1909,14 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>ARRENDATARIO</td>
                             </tr>     
                     </table>
-                    </p>   
+                  
                     ";
         } elseif ($contrato == 9) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato9_fechainicioobra']);
             $date2 = DateTime::createFromFormat('d/m/Y', $post['contrato9_fechafinobra']);
             $diff = $date1->diff($date2);
 
-            $html = "<h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>            
+            $html .= "<h3>CONTRATO DE CONSTRUCCION DE OBRA</h3>            
                     <p align='justify'>
                     Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de prestación de servicios de construcción de obra " . $post['contrato9_contruccion'] . " , al tenor de las siguientes cláusulas:
                     <br>
@@ -1905,6 +1943,7 @@ class Contrato extends CI_Controller
                     <br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                     <br><br>
+                      </p>
                      <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['cliente-nombre'] . " " . $post['cliente-apellidopaterno'] . " " . $post['cliente-apellidomaterno'] . "</td>
@@ -1915,10 +1954,10 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>CONSTRUCTOR-CONTRATADO</td>
                             </tr>     
                     </table>
-                    </p>
+                  
                     ";
         } elseif ($contrato == 10) {
-            $html = "<h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
+            $html .= "<h3>CONTRATO PRIVADO DE ANTICRESIS DE BIEN INMUEBLE</h3>
                     <p align='justify'>
                     Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de ANTICRESIS, con la finalidad de ser elevado a público, al tenor de las siguientes clausulas:
                     <br><br>
@@ -1946,6 +1985,7 @@ class Contrato extends CI_Controller
                     <br><br>
                     <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong> 
                     <br><br>
+                     </p>   
                     <table style='width:100%;'>
                             <tr>
                                     <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . " </td>
@@ -1956,14 +1996,14 @@ class Contrato extends CI_Controller
                                     <td style='text-align: center; font-weight: bold;'>ACREEDOR ANTICRESISTA</td>
                             </tr>     
                     </table>
-                    </p>                        
+                                        
                     ";
         } elseif ($contrato == 11) {
             $date1 = DateTime::createFromFormat('d/m/Y', $post['contrato11_fechainicioprestamo']);
             $date2 = DateTime::createFromFormat('d/m/Y', $post['contrato11_fechafinprestamo']);
             $diff = $date1->diff($date2);
 
-            $html = "<h3>CONTRATO DE PRESTAMO DE DINERO</h3>      
+            $html .= "<h3>CONTRATO DE PRESTAMO DE DINERO</h3>      
                 <p align='justify'>
                 Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de préstamo de dinero, al tenor de las siguientes clausulas:
                 <br>
@@ -1988,6 +2028,7 @@ class Contrato extends CI_Controller
                 <br>
                 <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
                 <br><br>
+                 </p>     
                 <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -1998,10 +2039,10 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                     </tr>     
                 </table>
-                </p>     
+               
                 ";
         } elseif ($contrato == 12) {
-            $html = "<h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
+            $html .= "<h3>DOCUMENTO DE RECONOCIMIENTO DE DEUDA POR OBLIGACIONES PERSONALES Y COMPROMISO DE PAGO CON GARANTIA SOLIDARIA Y MANCOMUNADA</h3>
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de contrato de Reconocimiento de Deuda por Obligaciones Personales y Compromiso de Pago con Garantía Solidaria y Mancomunada, al tenor de las siguientes clausulas:
             <br>
@@ -2022,6 +2063,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p>
             <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -2041,7 +2083,7 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>GARANTE SOLIDARIO Y MANCOMUNADO</td>
                     </tr>
                 </table>
-            </p>
+           
         ";
         } elseif ($contrato == 13) {
             $cuotas = "";
@@ -2051,7 +2093,7 @@ class Contrato extends CI_Controller
                 $cuotas .= "<br>";
                 $cont++;
             }
-            $html = "<h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
+            $html .= "<h3>CONTRATO DE TRASFERENCIA DE INMUEBLE A CREDITO (CASA DEPARTAMENTO O LOTE DE TERRENO)</h3>
             <p align='justify'>
             Señor Notario de Fe Publica, de los registros que corren a su cargo sírvase insertar una minuta de transferencia de inmueble, al tenor de las siguientes clausulas:
             <br>
@@ -2077,6 +2119,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>      
             <br><br>
+            </p>
             <table style='width:100%;'>
                 <tr>
                     <td style='text-align: center;'>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -2087,14 +2130,14 @@ class Contrato extends CI_Controller
                     <td style='text-align: center; font-weight: bold;'>COMPRADOR</td>
                 </tr>
             </table>
-            </p>
+            
         ";
         } elseif ($contrato == 14) {
             $date1 = DateTime::createFromFormat('d/m/Y', '26/08/2020');
             $date2 = DateTime::createFromFormat('d/m/Y', '28/08/2020');
             $diff = $date1->diff($date2);
 
-            $html = "<h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
+            $html .= "<h3>CONTRATO DE FABRICACION DE PRODUCTO</h3>
              
              <p align='justify'>
                 Conste por el presente documento privado, con cargo de ser elevado a instrumento público, previo reconocimiento de firmas y rúbricas, suscrito entre partes sobre contrato de fabricacion de " . $post['contrato14_objetofabricacion'] . ", al tenor de las siguientes cláusulas:
@@ -2116,6 +2159,7 @@ class Contrato extends CI_Controller
                 <br>
                 <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>
             <br><br>
+             </p> 
             <table style='width:100%;'>
                 <tr>
                         <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -2126,7 +2170,7 @@ class Contrato extends CI_Controller
                         <td style='text-align: center; font-weight: bold;'>CONTRATADO o FABRICANTE</td>
                 </tr>     
             </table>
-            </p> 
+           
         ";
         } elseif ($contrato == 15) {
             $cuotas = "";
@@ -2162,6 +2206,7 @@ class Contrato extends CI_Controller
             <br>
             <strong>Santa Cruz, " . date('d') . " de " . $meses[date('n') - 1] . " del " . date('Y') . "</strong>     
             <br><br>
+            </p>
                 <table style='width:100%;'>
                     <tr>
                             <td style='text-align: center '>" . $post['usuario-nombre'] . " " . $post['usuario-apellidopaterno'] . " " . $post['usuario-apellidomaterno'] . "</td>
@@ -2172,7 +2217,7 @@ class Contrato extends CI_Controller
                             <td style='text-align: center; font-weight: bold;'>VENDEDOR/ACREEDOR</td>
                     </tr>     
                 </table>
-            </p>
+            
             ";
         }
 
